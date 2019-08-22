@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+
+
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+
+% This package is the cleverref package, it will allow us to generate these lists automatically.
+\usepackage{hyperref}
+
+
+\title{Demonstration of hyperref}
+\author{Brian Ballsun-Stanton}
+\date{August 2019}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{List of Errors}
+
+\begin{enumerate}
+    \item Fixing this one: \ref{error:er1}
+    \item On really odd errors: \ref{error:er2}
+\end{enumerate}
+
+\section{Introduction}
+
+\lipsum[1]
+\subsection{Specific activity 1}
+\label{dc:sec1}
+\lipsum[1]
+\subsection{Error 1}
+\label{error:er1}
+\lipsum[1]
+\subsection{Specific activity 1}
+\label{dc:sec1}
+\lipsum[1]
+\subsection{Error 2}
+\label{error:er2}
+\lipsum[1]
+
+\end{document}
